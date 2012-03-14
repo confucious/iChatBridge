@@ -5,7 +5,9 @@
 //  Created by Jerry Hsu on 3/11/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
+#import "AWEzvRendezvousData.h"
+#import "BonjourManager.h"
 #import "ICBAppDelegate.h"
 
 @implementation ICBAppDelegate
@@ -19,7 +21,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
 }
 
 @end
