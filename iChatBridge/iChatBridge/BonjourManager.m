@@ -2,21 +2,21 @@
 #import "BonjourManager.h"
 
 #import <dns_sd.h>
-//#import <openssl/sha.h>
+#import <openssl/sha.h>
 
 #define BIND_8_COMPAT 1
 
-//#import <sys/types.h>
-//#import <sys/socket.h>
-//#import <netinet/in.h>
-//#import <arpa/nameser.h>
-//#import <arpa/inet.h>
-//#import <netdb.h>
-//#import <resolv.h>
-//#import <errno.h>
-//#import <ctype.h>
-//#import <string.h>
-//#import <stdlib.h>
+#import <sys/types.h>
+#import <sys/socket.h>
+#import <netinet/in.h>
+#import <arpa/nameser.h>
+#import <arpa/inet.h>
+#import <netdb.h>
+#import <resolv.h>
+#import <errno.h>
+#import <ctype.h>
+#import <string.h>
+#import <stdlib.h>
 
 #import <SystemConfiguration/SystemConfiguration.h>
 
@@ -27,17 +27,14 @@
 	CFSocketRef				fSocketRef;
 	CFRunLoopSourceRef		fRunloopSrc;
     BonjourManager          *bonjourManager;
-	//AWEzvContactManager		*contactManager;
 }
 
 - (id)initWithServiceRef:(DNSServiceRef)ref forBonjourManager: (BonjourManager *)inBonjourManager;
-    //forContactManager:(AWEzvContactManager *)inContactManager;
 - (boolean_t)addToCurrentRunLoop;
 - (void)breakdownServiceController;
 - (DNSServiceRef)serviceRef;
 
 @property (readonly, nonatomic) BonjourManager *bonjourManager;
-//@property (readonly, nonatomic) AWEzvContactManager *contactManager;
 
 @end // Interface ServiceController
 
@@ -108,17 +105,17 @@ void image_register_reply (
 {
 	regCount = 0;
     
-	// Create data structure we'll advertise with
+	// Create data structure we'll advertise with (dummy data)
 	userAnnounceData = [[AWEzvRendezvousData alloc] init];
 	// Set field contents of the data
 	[userAnnounceData setField:@"1st" content:@""];
     //[client name]];
-	[userAnnounceData setField:@"email" content:@""];
+	[userAnnounceData setField:@"email" content:@"garza@cjas.org"];
 	[userAnnounceData setField:@"ext" content:@""];
 	[userAnnounceData setField:@"jid" content:@""];
-	[userAnnounceData setField:@"last" content:@""];
-	[userAnnounceData setField:@"msg" content:@""];
-	[userAnnounceData setField:@"nick" content:@""];
+	[userAnnounceData setField:@"last" content:@"garza"];
+	[userAnnounceData setField:@"msg" content:@"learning obj-c"];
+	[userAnnounceData setField:@"nick" content:@"garza@cjas.org"];
 	[userAnnounceData setField:@"node" content:@""];
 	[userAnnounceData setField:@"AIM" content:@""];
 	[userAnnounceData setField:@"email" content:@""];
@@ -153,12 +150,10 @@ void image_register_reply (
     
 	if (dnsError == kDNSServiceErr_NoError) {		
 		fDomainBrowser = [[ServiceController alloc] initWithServiceRef:servRef forBonjourManager:self];
-        //]forContactManager:self];
 		[fDomainBrowser addToCurrentRunLoop];
 		avDNSReference = servRef;
 	} else {
         NSLog(@"Could not register DNS service: _presence._tcp");
-		//[[client client] reportError:@"Could not register DNS service: _presence._tcp" ofLevel:AWEzvConnectionError];
 		[self disconnect];
 	}
     
@@ -194,11 +189,9 @@ void image_register_reply (
 		isConnected = connected;
         
 		if (connected) {
-            NSLog(@"should save state of connected somewhere else");
-			//[[client client] reportLoggedIn];
+            NSLog(@"bonjour connected state: logged in");
 		} else {
-            NSLog(@"should save state of not connected somewhere else");
-			//[[client client] reportLoggedOut];
+            NSLog(@"bonjour connected state: logged out");
 		}
 	}
 }
@@ -215,13 +208,11 @@ void image_register_reply (
     
 	if (avDNSReference == NULL) {
         NSLog(@"avDNSReference is null when trying to update the TXT record");
-		//[[client client] reportError:@"avDNSReference is null when trying to update the TXT Record" ofLevel:AWEzvWarning];
 		return;
 	}
     
 	txtRecord = [userAnnounceData dataAsTXTRecordRef];
     NSLog(@"%@", [userAnnounceData dictionary]);
-	//AILogWithSignature(@"%@", [userAnnounceData dictionary]);
 	updateError = DNSServiceUpdateRecord (
                                           /* serviceRef */ avDNSReference,
                                           /* recordRef, may be NULL */ NULL,
@@ -233,7 +224,6 @@ void image_register_reply (
     
 	if (updateError != kDNSServiceErr_NoError) {		
         NSLog(@"Error updating TXT Record");
-		//[[client client] reportError:@"Error updating TXT Record" ofLevel:AWEzvConnectionError];
 		[self disconnect];
 	}
 	
@@ -262,19 +252,12 @@ void image_register_reply (
 #warning Localize and report through the connection error system
 			case kDNSServiceErr_Unknown:
                 NSLog(@"Unknown error in Bonjour Registration");
-				//[[[self client] client] reportError:@"Unknown error in Bonjour Registration"
-                  //                          ofLevel:AWEzvConnectionError];
 				break;
 			case kDNSServiceErr_NameConflict:
                 NSLog(@"A user with your Bonjour data is already online");
-				//[[[self client] client] reportError:@"A user with your Bonjour data is already online"
-                  //                          ofLevel:AWEzvConnectionError];
 				break;
 			default:
                 NSLog(@"An internal error occurred");
-				//[[[self client] client] reportError:@"An internal error occurred"
-                  //                          ofLevel:AWEzvConnectionError];
-				//AWEzvLog(@"Internal error: rendezvous code %d", errorCode);
 				break;
 		}
 		// Kill connections
@@ -316,7 +299,6 @@ void handle_av_browse_reply(DNSServiceRef sdRef,
 	// Received a browser reply from DNSServiceBrowse for av, now must handle processing the list of results
 	if (errorCode == kDNSServiceErr_NoError) {
         BonjourManager *self = context;
-		//AWEzvContactManager *self = context;
 	    if (![[self myInstanceName] isEqualToString:[NSString stringWithUTF8String:serviceName]]) {
 			//[self browseResultwithFlags:flags onInterface:interfaceIndex name:serviceName type:regtype domain:replyDomain av:YES];
 		}
@@ -357,7 +339,6 @@ void resolve_reply( DNSServiceRef sdRef,
 		//[self updateContact:contact withData:data withHost:[NSString stringWithUTF8String:hosttarget] withInterface:interfaceIndex withPort:ntohs(port) av:YES];
 	} else {
         NSLog(@"Error resolving records");
-		//AWEzvLog(@"Error resolving records");
 	}	
 }
 
@@ -374,7 +355,6 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
 {
 	ServiceController *self = (ServiceController *)info;
     NSLog(@"Processing result for %@", self);
-	//AILogWithSignature(@"Processing result for %@", self);
     
 	DNSServiceErrorType err = DNSServiceProcessResult([self serviceRef]);
 	
@@ -385,8 +365,6 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
 			int childFD = accept(socketFD, /*addr*/ NULL, /*addrlen*/ NULL);
             NSLog(@"%@: Service ref %p received an unknown error with no data; perhaps mDNSResponder crashed? Result of calling accept(2) on fd %d is %d; will disconnect with error",
                   self, [self serviceRef], socketFD, childFD);
-			//AILog(@"%@: Service ref %p received an unknown error with no data; perhaps mDNSResponder crashed? Result of calling accept(2) on fd %d is %d; will disconnect with error",
-			//	  self, [self serviceRef], socketFD, childFD);
 			// We don't actually *want* a connection, so close the socket immediately.
 			if (childFD > -1) {
 				close(childFD);
@@ -411,12 +389,10 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
 }
 
 - (id) initWithServiceRef:(DNSServiceRef) ref forBonjourManager:(BonjourManager *)inBonjourManager
-                         //:(AWEzvContactManager *)inContactManager
 {
 	if ((self = [super init])) {
 		fServiceRef = ref;
         bonjourManager = [inBonjourManager retain];
-		//contactManager = [inContactManager retain];
 	}
     
 	return self;
@@ -435,10 +411,8 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
 	
 	if (fRunloopSrc != NULL) {
 		NSLog(@"Adding run loop source %p from run loop %p", fRunloopSrc, CFRunLoopGetCurrent());
-		//AILogWithSignature(@"Adding run loop source %p from run loop %p", fRunloopSrc, CFRunLoopGetCurrent());
 		CFRunLoopAddSource(CFRunLoopGetCurrent(), fRunloopSrc, kCFRunLoopDefaultMode);
 	} else {
-		//AILog(@"%@: Could not listen to runloop socket", self);
         NSLog(@"%@: Could not listen to runloop socket", self);
 	}
     
@@ -459,17 +433,13 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
 // Remove service from runloop, deallocate service and associated resources
 {
     NSLog(@"%@", self);
-	//AILogWithSignature(@"%@", self);
-    
 	[self breakdownServiceController];
-    
 	[super dealloc];
 }
 
 - (void)breakdownServiceController
 {
 	NSLog(@"%@", self);
-	//AILogWithSignature(@"%@", self);
     
 	if (fSocketRef != NULL) {
 		CFSocketInvalidate(fSocketRef);	// Note: Also closes the underlying socket
@@ -479,7 +449,6 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
     
 	if (fRunloopSrc != NULL) {
 		NSLog(@"Removing run loop source %p from run loop %p", fRunloopSrc, CFRunLoopGetCurrent());
-		//AILogWithSignature(@"Removing run loop source %p from run loop %p", fRunloopSrc, CFRunLoopGetCurrent());
 		CFRunLoopRemoveSource(CFRunLoopGetCurrent(), fRunloopSrc, kCFRunLoopDefaultMode);
 		CFRelease(fRunloopSrc);
 		fRunloopSrc = NULL;
@@ -487,14 +456,10 @@ static void	ProcessSockData( CFSocketRef s, CFSocketCallBackType type, CFDataRef
     
 	if (fServiceRef) {
 		NSLog(@"Deallocating DNSServiceRef %p", fServiceRef);
-		//AILogWithSignature(@"Deallocating DNSServiceRef %p", fServiceRef);
-        
 		DNSServiceRefDeallocate(fServiceRef);
 		fServiceRef = NULL;
 	}
     
     [bonjourManager release]; bonjourManager = nil;
-	//[contactManager release]; contactManager = nil;
 }
-
 @end // Implementation ServiceController
