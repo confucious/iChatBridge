@@ -37,6 +37,10 @@
 
 @implementation AWEzvContactManager
 
+- (NSString *)description {
+    return [NSString stringWithFormat: @"%@", userAnnounceData];
+}
+
 - (id)initWithClient:(AWEzv *)newClient 
 {
     if ((self = [super init])) {
@@ -45,7 +49,7 @@
 		isConnected = NO;
 		
 		/* find username and computer name */
-		CFStringRef consoleUser = SCDynamicStoreCopyConsoleUser(NULL, NULL, NULL);
+//		CFStringRef consoleUser = SCDynamicStoreCopyConsoleUser(NULL, NULL, NULL);
 		CFStringRef computerName = SCDynamicStoreCopyLocalHostName(NULL);
 		if (!computerName) {
 			/* computerName can return NULL if the computer name is not set or an error occurs */
@@ -56,9 +60,10 @@
 			CFRelease(uuid);		
 		}
 		avInstanceName = [[NSString alloc] initWithFormat:@"%@@%@",
-						  (consoleUser ? (NSString *)consoleUser : @""),
+                          [client name],
+//						  (consoleUser ? (NSString *)consoleUser : @""),
 						  (computerName ? (NSString *)computerName : @"")];
-		if (consoleUser) CFRelease(consoleUser);
+//		if (consoleUser) CFRelease(consoleUser);
 		if (computerName) CFRelease(computerName);		
 	}
 

@@ -633,5 +633,9 @@ const char endn[] = { '\x00', '\x00', '\x00', '\x00'};
 	return [NSData dataWithBytes:data length:strlen(data)];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat: @"%@", keys];
+}
+
 
 @end

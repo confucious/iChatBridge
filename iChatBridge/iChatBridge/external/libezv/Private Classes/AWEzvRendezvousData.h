@@ -54,5 +54,5 @@
 - (NSData *) dataAsPackedPString;
 - (NSData *) avDataAsPackedPString;
 - (TXTRecordRef)dataAsTXTRecordRef;
-
+- (NSString*) description;
 @end

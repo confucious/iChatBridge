@@ -175,20 +175,22 @@ void image_register_reply (
 
 	TXTRecordRef txtRecord;
 	txtRecord = [userAnnounceData dataAsTXTRecordRef];
+    NSLog(@"userannounce register %@", userAnnounceData);
 
 	dnsError = DNSServiceRegister(
-			/* Uninitialized service discovery reference */ &servRef, 
-		    /* Flags indicating how to handle name conflicts */ /* kDNSServiceFlagsNoAutoRename */ 0, 
-		    /* Interface on which to register, 0 for all available */ 0, 
-		    /* Service's name, may be null */ [avInstanceName UTF8String],
-		    /* Service registration type */ "_presence._tcp", 
-		    /* Domain, may be NULL */ NULL,
-		    /* SRV target host name, may be NULL */ NULL,
-		    /* Port number in network byte order */ htons(port), 
-		    /* Length of txt record in bytes, 0 for NULL txt record */ TXTRecordGetLength(&txtRecord) , 
-		    /* Txt record properly formatted, may be NULL */ TXTRecordGetBytesPtr(&txtRecord) ,
-		    /* Call back function, may be NULL */ register_reply,
-			/* Application context pointer, may be null */ self
+                                  /* Uninitialized service discovery reference */ &servRef, 
+                                  /* Flags indicating how to handle name conflicts */ /* kDNSServiceFlagsNoAutoRename */ 0, 
+                                  /* Interface on which to register, 0 for all available */ kDNSServiceInterfaceIndexLocalOnly, 
+//                                  /* Interface on which to register, 0 for all available */ kDNSServiceInterfaceIndexLocalOnly, 
+                                  /* Service's name, may be null */ [avInstanceName UTF8String],
+                                  /* Service registration type */ "_presence._tcp", 
+                                  /* Domain, may be NULL */ NULL,
+                                  /* SRV target host name, may be NULL */ NULL,
+                                  /* Port number in network byte order */ htons(port), 
+                                  /* Length of txt record in bytes, 0 for NULL txt record */ TXTRecordGetLength(&txtRecord) , 
+                                  /* Txt record properly formatted, may be NULL */ TXTRecordGetBytesPtr(&txtRecord) ,
+                                  /* Call back function, may be NULL */ register_reply,
+                                  /* Application context pointer, may be null */ self
 	);
 
 	if (dnsError == kDNSServiceErr_NoError) {		
@@ -423,7 +425,7 @@ void image_register_reply (
 
 	avBrowseError = DNSServiceBrowse (/* Uninitialized DNSServiceRef */ &browsRef,
 	                                  /* Flags, currently unused */ 0,
-	                                  /* Interface index, 0 for all available */ 0,
+	                                  /* Interface index, 0 for all available */ kDNSServiceInterfaceIndexLocalOnly,
 	                                  /* Registration type */ "_presence._tcp",
 	                                  /* Domain, may be null for default */ NULL,
 	                                  /* CallBack function */ handle_av_browse_reply,
@@ -806,7 +808,9 @@ void image_register_reply (
 void register_reply(DNSServiceRef sdRef, DNSServiceFlags flags, DNSServiceErrorType errorCode, const char *name, const char *regtype, const char *domain, void *context)
 {
 	AWEzvContactManager *self = context;
-	[self setInstanceName:[NSString stringWithUTF8String:name]];
+    NSString* instanceName = [NSString stringWithUTF8String:name];
+    NSLog(@"got register reply instance name of %@", instanceName);
+	[self setInstanceName: instanceName];
 	[self regCallBack:errorCode];
 }
 

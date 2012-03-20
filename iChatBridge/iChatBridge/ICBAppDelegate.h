@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import <Cocoa/Cocoa.h>
+#import "AWEzv.h"
 
-@interface ICBAppDelegate : NSObject <NSApplicationDelegate>
+@interface ICBAppDelegate : NSObject <NSApplicationDelegate, AWEzvClientProtocol>
 
 @property (assign) IBOutlet NSWindow *window;
 

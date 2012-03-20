@@ -67,6 +67,8 @@
 
 - (AWEzvContact *)contactForIdentifier:(NSString *)uniqueID;
 
+- (NSString*) description;
+
 @property (readonly, nonatomic) AWEzv *client;
 
 - (void)closeConnections;
