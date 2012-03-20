@@ -136,7 +136,7 @@ void image_register_reply (
 	dnsError = DNSServiceRegister(
                                   /* Uninitialized service discovery reference */ &servRef, 
                                   /* Flags indicating how to handle name conflicts */ /* kDNSServiceFlagsNoAutoRename */ 0, 
-                                  /* Interface on which to register, 0 for all available */ 0, 
+                                  /* Interface on which to register, 0 for all available */ kDNSServiceInterfaceIndexLocalOnly, 
                                   /* Service's name, may be null */ [avInstanceName UTF8String],
                                   /* Service registration type */ "_presence._tcp", 
                                   /* Domain, may be NULL */ NULL,

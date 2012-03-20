@@ -7,15 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0EBBB915175C62002AFFAE /* AWEzv.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB8715175C62002AFFAE /* AWEzv.m */; };
+		AB0EBBBA15175C62002AFFAE /* AWEzvContact.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB8915175C62002AFFAE /* AWEzvContact.m */; };
+		AB0EBBBB15175C62002AFFAE /* EKEzvFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB8B15175C62002AFFAE /* EKEzvFileTransfer.m */; };
+		AB0EBBBC15175C62002AFFAE /* EKEzvIncomingFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB8D15175C62002AFFAE /* EKEzvIncomingFileTransfer.m */; };
+		AB0EBBBD15175C62002AFFAE /* EKEzvOutgoingFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB8F15175C62002AFFAE /* EKEzvOutgoingFileTransfer.m */; };
+		AB0EBBBE15175C62002AFFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AB0EBB9615175C62002AFFAE /* LICENSE */; };
+		AB0EBBBF15175C62002AFFAE /* AWEzvSupportRoutines.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB9A15175C62002AFFAE /* AWEzvSupportRoutines.m */; };
+		AB0EBBC015175C62002AFFAE /* AWEzvContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB9D15175C62002AFFAE /* AWEzvContactManager.m */; };
+		AB0EBBC115175C62002AFFAE /* AWEzvContactManagerListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBB9F15175C62002AFFAE /* AWEzvContactManagerListener.m */; };
+		AB0EBBC215175C62002AFFAE /* AWEzvContactManagerRendezvous.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBA115175C62002AFFAE /* AWEzvContactManagerRendezvous.m */; };
+		AB0EBBC315175C62002AFFAE /* AWEzvContactPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBA315175C62002AFFAE /* AWEzvContactPrivate.m */; };
+		AB0EBBC415175C62002AFFAE /* AWEzvPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBA515175C62002AFFAE /* AWEzvPrivate.m */; };
+		AB0EBBC515175C62002AFFAE /* AWEzvRendezvousData.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBA715175C62002AFFAE /* AWEzvRendezvousData.m */; };
+		AB0EBBC615175C62002AFFAE /* AWEzvStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBA915175C62002AFFAE /* AWEzvStack.m */; };
+		AB0EBBC715175C62002AFFAE /* AWEzvXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBAB15175C62002AFFAE /* AWEzvXMLNode.m */; };
+		AB0EBBC815175C62002AFFAE /* AWEzvXMLStream.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBAD15175C62002AFFAE /* AWEzvXMLStream.m */; };
+		AB0EBBC915175C62002AFFAE /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBB015175C62002AFFAE /* AsyncSocket.m */; };
+		AB0EBBCA15175C62002AFFAE /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBB215175C62002AFFAE /* HTTPAuthenticationRequest.m */; };
+		AB0EBBCB15175C62002AFFAE /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0EBBB415175C62002AFFAE /* HTTPServer.m */; };
+		AB0EBBCC15175C62002AFFAE /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB0EBBB515175C62002AFFAE /* LICENSE.txt */; };
+		AB0EBBF615175F09002AFFAE /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF515175F09002AFFAE /* libcrypto.dylib */; };
+		AB0EBBF815175F17002AFFAE /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF715175F17002AFFAE /* libexpat.dylib */; };
+		AB0EBBFA15175F6D002AFFAE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF915175F6D002AFFAE /* SystemConfiguration.framework */; };
 		AB8CC5F2150D651300DE9101 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8CC5F1150D651300DE9101 /* Cocoa.framework */; };
 		AB8CC5FC150D651300DE9101 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8CC5FA150D651300DE9101 /* InfoPlist.strings */; };
 		AB8CC5FE150D651300DE9101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CC5FD150D651300DE9101 /* main.m */; };
 		AB8CC602150D651300DE9101 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AB8CC600150D651300DE9101 /* Credits.rtf */; };
 		AB8CC605150D651300DE9101 /* ICBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CC604150D651300DE9101 /* ICBAppDelegate.m */; };
 		AB8CC608150D651300DE9101 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8CC606150D651300DE9101 /* MainMenu.xib */; };
+		ABB7CE9A1518B31D00E967B9 /* NSString+icb.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB7CE991518B31D00E967B9 /* NSString+icb.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB0EBB8615175C62002AFFAE /* AWEzv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzv.h; sourceTree = "<group>"; };
+		AB0EBB8715175C62002AFFAE /* AWEzv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzv.m; sourceTree = "<group>"; };
+		AB0EBB8815175C62002AFFAE /* AWEzvContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvContact.h; sourceTree = "<group>"; };
+		AB0EBB8915175C62002AFFAE /* AWEzvContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvContact.m; sourceTree = "<group>"; };
+		AB0EBB8A15175C62002AFFAE /* EKEzvFileTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKEzvFileTransfer.h; sourceTree = "<group>"; };
+		AB0EBB8B15175C62002AFFAE /* EKEzvFileTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKEzvFileTransfer.m; sourceTree = "<group>"; };
+		AB0EBB8C15175C62002AFFAE /* EKEzvIncomingFileTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKEzvIncomingFileTransfer.h; sourceTree = "<group>"; };
+		AB0EBB8D15175C62002AFFAE /* EKEzvIncomingFileTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKEzvIncomingFileTransfer.m; sourceTree = "<group>"; };
+		AB0EBB8E15175C62002AFFAE /* EKEzvOutgoingFileTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKEzvOutgoingFileTransfer.h; sourceTree = "<group>"; };
+		AB0EBB8F15175C62002AFFAE /* EKEzvOutgoingFileTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKEzvOutgoingFileTransfer.m; sourceTree = "<group>"; };
+		AB0EBB9615175C62002AFFAE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AB0EBB9815175C62002AFFAE /* AWEzvDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvDefines.h; sourceTree = "<group>"; };
+		AB0EBB9915175C62002AFFAE /* AWEzvSupportRoutines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvSupportRoutines.h; sourceTree = "<group>"; };
+		AB0EBB9A15175C62002AFFAE /* AWEzvSupportRoutines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvSupportRoutines.m; sourceTree = "<group>"; };
+		AB0EBB9C15175C62002AFFAE /* AWEzvContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvContactManager.h; sourceTree = "<group>"; };
+		AB0EBB9D15175C62002AFFAE /* AWEzvContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvContactManager.m; sourceTree = "<group>"; };
+		AB0EBB9E15175C62002AFFAE /* AWEzvContactManagerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvContactManagerListener.h; sourceTree = "<group>"; };
+		AB0EBB9F15175C62002AFFAE /* AWEzvContactManagerListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvContactManagerListener.m; sourceTree = "<group>"; };
+		AB0EBBA015175C62002AFFAE /* AWEzvContactManagerRendezvous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvContactManagerRendezvous.h; sourceTree = "<group>"; };
+		AB0EBBA115175C62002AFFAE /* AWEzvContactManagerRendezvous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvContactManagerRendezvous.m; sourceTree = "<group>"; };
+		AB0EBBA215175C62002AFFAE /* AWEzvContactPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvContactPrivate.h; sourceTree = "<group>"; };
+		AB0EBBA315175C62002AFFAE /* AWEzvContactPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvContactPrivate.m; sourceTree = "<group>"; };
+		AB0EBBA415175C62002AFFAE /* AWEzvPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvPrivate.h; sourceTree = "<group>"; };
+		AB0EBBA515175C62002AFFAE /* AWEzvPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvPrivate.m; sourceTree = "<group>"; };
+		AB0EBBA615175C62002AFFAE /* AWEzvRendezvousData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvRendezvousData.h; sourceTree = "<group>"; };
+		AB0EBBA715175C62002AFFAE /* AWEzvRendezvousData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvRendezvousData.m; sourceTree = "<group>"; };
+		AB0EBBA815175C62002AFFAE /* AWEzvStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvStack.h; sourceTree = "<group>"; };
+		AB0EBBA915175C62002AFFAE /* AWEzvStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvStack.m; sourceTree = "<group>"; };
+		AB0EBBAA15175C62002AFFAE /* AWEzvXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvXMLNode.h; sourceTree = "<group>"; };
+		AB0EBBAB15175C62002AFFAE /* AWEzvXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvXMLNode.m; sourceTree = "<group>"; };
+		AB0EBBAC15175C62002AFFAE /* AWEzvXMLStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWEzvXMLStream.h; sourceTree = "<group>"; };
+		AB0EBBAD15175C62002AFFAE /* AWEzvXMLStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWEzvXMLStream.m; sourceTree = "<group>"; };
+		AB0EBBAF15175C62002AFFAE /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		AB0EBBB015175C62002AFFAE /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		AB0EBBB115175C62002AFFAE /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		AB0EBBB215175C62002AFFAE /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		AB0EBBB315175C62002AFFAE /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		AB0EBBB415175C62002AFFAE /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		AB0EBBB515175C62002AFFAE /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AB0EBBF515175F09002AFFAE /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		AB0EBBF715175F17002AFFAE /* libexpat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexpat.dylib; path = usr/lib/libexpat.dylib; sourceTree = SDKROOT; };
+		AB0EBBF915175F6D002AFFAE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AB8CC5ED150D651300DE9101 /* iChatBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8CC5F1150D651300DE9101 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AB8CC5F4150D651300DE9101 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +95,8 @@
 		AB8CC603150D651300DE9101 /* ICBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICBAppDelegate.h; sourceTree = "<group>"; };
 		AB8CC604150D651300DE9101 /* ICBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICBAppDelegate.m; sourceTree = "<group>"; };
 		AB8CC607150D651300DE9101 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ABB7CE981518B31D00E967B9 /* NSString+icb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+icb.h"; sourceTree = "<group>"; };
+		ABB7CE991518B31D00E967B9 /* NSString+icb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+icb.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0EBBFA15175F6D002AFFAE /* SystemConfiguration.framework in Frameworks */,
+				AB0EBBF815175F17002AFFAE /* libexpat.dylib in Frameworks */,
+				AB0EBBF615175F09002AFFAE /* libcrypto.dylib in Frameworks */,
 				AB8CC5F2150D651300DE9101 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,9 +114,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0EBB7B15175551002AFFAE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ABB7CE961518B2F800E967B9 /* Categories */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB0EBB8315175C32002AFFAE /* external */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBB8415175C62002AFFAE /* libezv */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		AB0EBB8415175C62002AFFAE /* libezv */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBB8515175C62002AFFAE /* Classes */,
+				AB0EBB9615175C62002AFFAE /* LICENSE */,
+				AB0EBB9715175C62002AFFAE /* Other Sources */,
+				AB0EBB9B15175C62002AFFAE /* Private Classes */,
+				AB0EBBAE15175C62002AFFAE /* Simple HTTP Server */,
+			);
+			path = libezv;
+			sourceTree = "<group>";
+		};
+		AB0EBB8515175C62002AFFAE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBB8615175C62002AFFAE /* AWEzv.h */,
+				AB0EBB8715175C62002AFFAE /* AWEzv.m */,
+				AB0EBB8815175C62002AFFAE /* AWEzvContact.h */,
+				AB0EBB8915175C62002AFFAE /* AWEzvContact.m */,
+				AB0EBB8A15175C62002AFFAE /* EKEzvFileTransfer.h */,
+				AB0EBB8B15175C62002AFFAE /* EKEzvFileTransfer.m */,
+				AB0EBB8C15175C62002AFFAE /* EKEzvIncomingFileTransfer.h */,
+				AB0EBB8D15175C62002AFFAE /* EKEzvIncomingFileTransfer.m */,
+				AB0EBB8E15175C62002AFFAE /* EKEzvOutgoingFileTransfer.h */,
+				AB0EBB8F15175C62002AFFAE /* EKEzvOutgoingFileTransfer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB0EBB9715175C62002AFFAE /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBB9815175C62002AFFAE /* AWEzvDefines.h */,
+				AB0EBB9915175C62002AFFAE /* AWEzvSupportRoutines.h */,
+				AB0EBB9A15175C62002AFFAE /* AWEzvSupportRoutines.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		AB0EBB9B15175C62002AFFAE /* Private Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBB9C15175C62002AFFAE /* AWEzvContactManager.h */,
+				AB0EBB9D15175C62002AFFAE /* AWEzvContactManager.m */,
+				AB0EBB9E15175C62002AFFAE /* AWEzvContactManagerListener.h */,
+				AB0EBB9F15175C62002AFFAE /* AWEzvContactManagerListener.m */,
+				AB0EBBA015175C62002AFFAE /* AWEzvContactManagerRendezvous.h */,
+				AB0EBBA115175C62002AFFAE /* AWEzvContactManagerRendezvous.m */,
+				AB0EBBA215175C62002AFFAE /* AWEzvContactPrivate.h */,
+				AB0EBBA315175C62002AFFAE /* AWEzvContactPrivate.m */,
+				AB0EBBA415175C62002AFFAE /* AWEzvPrivate.h */,
+				AB0EBBA515175C62002AFFAE /* AWEzvPrivate.m */,
+				AB0EBBA615175C62002AFFAE /* AWEzvRendezvousData.h */,
+				AB0EBBA715175C62002AFFAE /* AWEzvRendezvousData.m */,
+				AB0EBBA815175C62002AFFAE /* AWEzvStack.h */,
+				AB0EBBA915175C62002AFFAE /* AWEzvStack.m */,
+				AB0EBBAA15175C62002AFFAE /* AWEzvXMLNode.h */,
+				AB0EBBAB15175C62002AFFAE /* AWEzvXMLNode.m */,
+				AB0EBBAC15175C62002AFFAE /* AWEzvXMLStream.h */,
+				AB0EBBAD15175C62002AFFAE /* AWEzvXMLStream.m */,
+			);
+			path = "Private Classes";
+			sourceTree = "<group>";
+		};
+		AB0EBBAE15175C62002AFFAE /* Simple HTTP Server */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EBBAF15175C62002AFFAE /* AsyncSocket.h */,
+				AB0EBBB015175C62002AFFAE /* AsyncSocket.m */,
+				AB0EBBB115175C62002AFFAE /* HTTPAuthenticationRequest.h */,
+				AB0EBBB215175C62002AFFAE /* HTTPAuthenticationRequest.m */,
+				AB0EBBB315175C62002AFFAE /* HTTPServer.h */,
+				AB0EBBB415175C62002AFFAE /* HTTPServer.m */,
+				AB0EBBB515175C62002AFFAE /* LICENSE.txt */,
+			);
+			path = "Simple HTTP Server";
+			sourceTree = "<group>";
+		};
 		AB8CC5E2150D651300DE9101 = {
 			isa = PBXGroup;
 			children = (
+				AB0EBBF915175F6D002AFFAE /* SystemConfiguration.framework */,
+				AB0EBBF715175F17002AFFAE /* libexpat.dylib */,
+				AB0EBBF515175F09002AFFAE /* libcrypto.dylib */,
 				AB8CC5F7150D651300DE9101 /* iChatBridge */,
 				AB8CC5F0150D651300DE9101 /* Frameworks */,
 				AB8CC5EE150D651300DE9101 /* Products */,
@@ -82,6 +250,8 @@
 		AB8CC5F7150D651300DE9101 /* iChatBridge */ = {
 			isa = PBXGroup;
 			children = (
+				AB0EBB8315175C32002AFFAE /* external */,
+				AB0EBB7B15175551002AFFAE /* Classes */,
 				AB8CC603150D651300DE9101 /* ICBAppDelegate.h */,
 				AB8CC604150D651300DE9101 /* ICBAppDelegate.m */,
 				AB8CC606150D651300DE9101 /* MainMenu.xib */,
@@ -100,6 +270,15 @@
 				AB8CC600150D651300DE9101 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABB7CE961518B2F800E967B9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ABB7CE981518B31D00E967B9 /* NSString+icb.h */,
+				ABB7CE991518B31D00E967B9 /* NSString+icb.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +335,8 @@
 				AB8CC5FC150D651300DE9101 /* InfoPlist.strings in Resources */,
 				AB8CC602150D651300DE9101 /* Credits.rtf in Resources */,
 				AB8CC608150D651300DE9101 /* MainMenu.xib in Resources */,
+				AB0EBBBE15175C62002AFFAE /* LICENSE in Resources */,
+				AB0EBBCC15175C62002AFFAE /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +349,25 @@
 			files = (
 				AB8CC5FE150D651300DE9101 /* main.m in Sources */,
 				AB8CC605150D651300DE9101 /* ICBAppDelegate.m in Sources */,
+				AB0EBBB915175C62002AFFAE /* AWEzv.m in Sources */,
+				AB0EBBBA15175C62002AFFAE /* AWEzvContact.m in Sources */,
+				AB0EBBBB15175C62002AFFAE /* EKEzvFileTransfer.m in Sources */,
+				AB0EBBBC15175C62002AFFAE /* EKEzvIncomingFileTransfer.m in Sources */,
+				AB0EBBBD15175C62002AFFAE /* EKEzvOutgoingFileTransfer.m in Sources */,
+				AB0EBBBF15175C62002AFFAE /* AWEzvSupportRoutines.m in Sources */,
+				AB0EBBC015175C62002AFFAE /* AWEzvContactManager.m in Sources */,
+				AB0EBBC115175C62002AFFAE /* AWEzvContactManagerListener.m in Sources */,
+				AB0EBBC215175C62002AFFAE /* AWEzvContactManagerRendezvous.m in Sources */,
+				AB0EBBC315175C62002AFFAE /* AWEzvContactPrivate.m in Sources */,
+				AB0EBBC415175C62002AFFAE /* AWEzvPrivate.m in Sources */,
+				AB0EBBC515175C62002AFFAE /* AWEzvRendezvousData.m in Sources */,
+				AB0EBBC615175C62002AFFAE /* AWEzvStack.m in Sources */,
+				AB0EBBC715175C62002AFFAE /* AWEzvXMLNode.m in Sources */,
+				AB0EBBC815175C62002AFFAE /* AWEzvXMLStream.m in Sources */,
+				AB0EBBC915175C62002AFFAE /* AsyncSocket.m in Sources */,
+				AB0EBBCA15175C62002AFFAE /* HTTPAuthenticationRequest.m in Sources */,
+				AB0EBBCB15175C62002AFFAE /* HTTPServer.m in Sources */,
+				ABB7CE9A1518B31D00E967B9 /* NSString+icb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +487,7 @@
 				AB8CC60D150D651300DE9101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

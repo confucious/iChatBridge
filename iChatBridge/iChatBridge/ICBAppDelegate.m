@@ -6,9 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "AWEzvRendezvousData.h"
-#import "BonjourManager.h"
 #import "ICBAppDelegate.h"
+#import "AWEzvRendezvousData.h"
 
 @implementation ICBAppDelegate
 
