@@ -30,6 +30,18 @@
 		AB0EBBF615175F09002AFFAE /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF515175F09002AFFAE /* libcrypto.dylib */; };
 		AB0EBBF815175F17002AFFAE /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF715175F17002AFFAE /* libexpat.dylib */; };
 		AB0EBBFA15175F6D002AFFAE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EBBF915175F6D002AFFAE /* SystemConfiguration.framework */; };
+		AB3FED891519FFE400EB3C8E /* DDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED701519FFE400EB3C8E /* DDAsyncSocket.m */; };
+		AB3FED8A1519FFE400EB3C8E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED741519FFE400EB3C8E /* NSObject+SBJSON.m */; };
+		AB3FED8B1519FFE400EB3C8E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED761519FFE400EB3C8E /* NSString+SBJSON.m */; };
+		AB3FED8C1519FFE400EB3C8E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED781519FFE400EB3C8E /* SBJSON.m */; };
+		AB3FED8D1519FFE400EB3C8E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED7A1519FFE400EB3C8E /* SBJsonBase.m */; };
+		AB3FED8E1519FFE400EB3C8E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED7C1519FFE400EB3C8E /* SBJsonParser.m */; };
+		AB3FED8F1519FFE400EB3C8E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED7E1519FFE400EB3C8E /* SBJsonWriter.m */; };
+		AB3FED901519FFE400EB3C8E /* MSCampfireEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED801519FFE400EB3C8E /* MSCampfireEngine.m */; };
+		AB3FED911519FFE400EB3C8E /* MSHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED821519FFE400EB3C8E /* MSHTTPConnection.m */; };
+		AB3FED921519FFE400EB3C8E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED841519FFE400EB3C8E /* NSData+Base64.m */; };
+		AB3FED931519FFE400EB3C8E /* NSNumber+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED861519FFE400EB3C8E /* NSNumber+Conversion.m */; };
+		AB3FED941519FFE400EB3C8E /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FED881519FFE400EB3C8E /* NSString+UUID.m */; };
 		AB8CC5F2150D651300DE9101 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8CC5F1150D651300DE9101 /* Cocoa.framework */; };
 		AB8CC5FC150D651300DE9101 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8CC5FA150D651300DE9101 /* InfoPlist.strings */; };
 		AB8CC5FE150D651300DE9101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CC5FD150D651300DE9101 /* main.m */; };
@@ -82,6 +94,31 @@
 		AB0EBBF515175F09002AFFAE /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
 		AB0EBBF715175F17002AFFAE /* libexpat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexpat.dylib; path = usr/lib/libexpat.dylib; sourceTree = SDKROOT; };
 		AB0EBBF915175F6D002AFFAE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB3FED6F1519FFE400EB3C8E /* DDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAsyncSocket.h; sourceTree = "<group>"; };
+		AB3FED701519FFE400EB3C8E /* DDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAsyncSocket.m; sourceTree = "<group>"; };
+		AB3FED721519FFE400EB3C8E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		AB3FED731519FFE400EB3C8E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		AB3FED741519FFE400EB3C8E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		AB3FED751519FFE400EB3C8E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		AB3FED761519FFE400EB3C8E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		AB3FED771519FFE400EB3C8E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		AB3FED781519FFE400EB3C8E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		AB3FED791519FFE400EB3C8E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		AB3FED7A1519FFE400EB3C8E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		AB3FED7B1519FFE400EB3C8E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AB3FED7C1519FFE400EB3C8E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AB3FED7D1519FFE400EB3C8E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AB3FED7E1519FFE400EB3C8E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AB3FED7F1519FFE400EB3C8E /* MSCampfireEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCampfireEngine.h; sourceTree = "<group>"; };
+		AB3FED801519FFE400EB3C8E /* MSCampfireEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCampfireEngine.m; sourceTree = "<group>"; };
+		AB3FED811519FFE400EB3C8E /* MSHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHTTPConnection.h; sourceTree = "<group>"; };
+		AB3FED821519FFE400EB3C8E /* MSHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHTTPConnection.m; sourceTree = "<group>"; };
+		AB3FED831519FFE400EB3C8E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		AB3FED841519FFE400EB3C8E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		AB3FED851519FFE400EB3C8E /* NSNumber+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Conversion.h"; sourceTree = "<group>"; };
+		AB3FED861519FFE400EB3C8E /* NSNumber+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Conversion.m"; sourceTree = "<group>"; };
+		AB3FED871519FFE400EB3C8E /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		AB3FED881519FFE400EB3C8E /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		AB8CC5ED150D651300DE9101 /* iChatBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8CC5F1150D651300DE9101 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AB8CC5F4150D651300DE9101 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -125,6 +162,7 @@
 		AB0EBB8315175C32002AFFAE /* external */ = {
 			isa = PBXGroup;
 			children = (
+				AB3FED6E1519FFE400EB3C8E /* MSCampfireEngine */,
 				AB0EBB8415175C62002AFFAE /* libezv */,
 			);
 			path = external;
@@ -206,6 +244,46 @@
 				AB0EBBB515175C62002AFFAE /* LICENSE.txt */,
 			);
 			path = "Simple HTTP Server";
+			sourceTree = "<group>";
+		};
+		AB3FED6E1519FFE400EB3C8E /* MSCampfireEngine */ = {
+			isa = PBXGroup;
+			children = (
+				AB3FED6F1519FFE400EB3C8E /* DDAsyncSocket.h */,
+				AB3FED701519FFE400EB3C8E /* DDAsyncSocket.m */,
+				AB3FED711519FFE400EB3C8E /* JSON */,
+				AB3FED7F1519FFE400EB3C8E /* MSCampfireEngine.h */,
+				AB3FED801519FFE400EB3C8E /* MSCampfireEngine.m */,
+				AB3FED811519FFE400EB3C8E /* MSHTTPConnection.h */,
+				AB3FED821519FFE400EB3C8E /* MSHTTPConnection.m */,
+				AB3FED831519FFE400EB3C8E /* NSData+Base64.h */,
+				AB3FED841519FFE400EB3C8E /* NSData+Base64.m */,
+				AB3FED851519FFE400EB3C8E /* NSNumber+Conversion.h */,
+				AB3FED861519FFE400EB3C8E /* NSNumber+Conversion.m */,
+				AB3FED871519FFE400EB3C8E /* NSString+UUID.h */,
+				AB3FED881519FFE400EB3C8E /* NSString+UUID.m */,
+			);
+			path = MSCampfireEngine;
+			sourceTree = "<group>";
+		};
+		AB3FED711519FFE400EB3C8E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AB3FED721519FFE400EB3C8E /* JSON.h */,
+				AB3FED731519FFE400EB3C8E /* NSObject+SBJSON.h */,
+				AB3FED741519FFE400EB3C8E /* NSObject+SBJSON.m */,
+				AB3FED751519FFE400EB3C8E /* NSString+SBJSON.h */,
+				AB3FED761519FFE400EB3C8E /* NSString+SBJSON.m */,
+				AB3FED771519FFE400EB3C8E /* SBJSON.h */,
+				AB3FED781519FFE400EB3C8E /* SBJSON.m */,
+				AB3FED791519FFE400EB3C8E /* SBJsonBase.h */,
+				AB3FED7A1519FFE400EB3C8E /* SBJsonBase.m */,
+				AB3FED7B1519FFE400EB3C8E /* SBJsonParser.h */,
+				AB3FED7C1519FFE400EB3C8E /* SBJsonParser.m */,
+				AB3FED7D1519FFE400EB3C8E /* SBJsonWriter.h */,
+				AB3FED7E1519FFE400EB3C8E /* SBJsonWriter.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		AB8CC5E2150D651300DE9101 = {
@@ -368,6 +446,18 @@
 				AB0EBBCA15175C62002AFFAE /* HTTPAuthenticationRequest.m in Sources */,
 				AB0EBBCB15175C62002AFFAE /* HTTPServer.m in Sources */,
 				ABB7CE9A1518B31D00E967B9 /* NSString+icb.m in Sources */,
+				AB3FED891519FFE400EB3C8E /* DDAsyncSocket.m in Sources */,
+				AB3FED8A1519FFE400EB3C8E /* NSObject+SBJSON.m in Sources */,
+				AB3FED8B1519FFE400EB3C8E /* NSString+SBJSON.m in Sources */,
+				AB3FED8C1519FFE400EB3C8E /* SBJSON.m in Sources */,
+				AB3FED8D1519FFE400EB3C8E /* SBJsonBase.m in Sources */,
+				AB3FED8E1519FFE400EB3C8E /* SBJsonParser.m in Sources */,
+				AB3FED8F1519FFE400EB3C8E /* SBJsonWriter.m in Sources */,
+				AB3FED901519FFE400EB3C8E /* MSCampfireEngine.m in Sources */,
+				AB3FED911519FFE400EB3C8E /* MSHTTPConnection.m in Sources */,
+				AB3FED921519FFE400EB3C8E /* NSData+Base64.m in Sources */,
+				AB3FED931519FFE400EB3C8E /* NSNumber+Conversion.m in Sources */,
+				AB3FED941519FFE400EB3C8E /* NSString+UUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
