@@ -7,8 +7,13 @@
 //
 #import <Cocoa/Cocoa.h>
 #import "AWEzv.h"
+#import "XMPP.h"
+#import "XMPPRoom.h"
 
-@interface ICBAppDelegate : NSObject <NSApplicationDelegate, AWEzvClientProtocol>
+@interface ICBAppDelegate : NSObject <NSApplicationDelegate,
+AWEzvClientProtocol,
+XMPPStreamDelegate,
+XMPPRoomDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 
