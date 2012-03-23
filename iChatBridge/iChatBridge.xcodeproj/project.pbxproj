@@ -115,6 +115,8 @@
 		AB3FF1E9151C080800EB3C8E /* XMPPElement+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FF1E8151C080800EB3C8E /* XMPPElement+Delay.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		AB3FF1EF151C086F00EB3C8E /* NSDate+XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FF1EC151C086F00EB3C8E /* NSDate+XMPPDateTimeProfiles.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		AB3FF1F0151C086F00EB3C8E /* XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FF1EE151C086F00EB3C8E /* XMPPDateTimeProfiles.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		AB3FF1F3151C9E8F00EB3C8E /* ICBChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FF1F2151C9E8E00EB3C8E /* ICBChannelManager.m */; };
+		AB3FF531151CA97600EB3C8E /* ICBXmppChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3FF530151CA97500EB3C8E /* ICBXmppChannelManager.m */; };
 		AB8CC5F2150D651300DE9101 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8CC5F1150D651300DE9101 /* Cocoa.framework */; };
 		AB8CC5FC150D651300DE9101 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8CC5FA150D651300DE9101 /* InfoPlist.strings */; };
 		AB8CC5FE150D651300DE9101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8CC5FD150D651300DE9101 /* main.m */; };
@@ -345,6 +347,10 @@
 		AB3FF1EC151C086F00EB3C8E /* NSDate+XMPPDateTimeProfiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XMPPDateTimeProfiles.m"; sourceTree = "<group>"; };
 		AB3FF1ED151C086F00EB3C8E /* XMPPDateTimeProfiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPDateTimeProfiles.h; sourceTree = "<group>"; };
 		AB3FF1EE151C086F00EB3C8E /* XMPPDateTimeProfiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPDateTimeProfiles.m; sourceTree = "<group>"; };
+		AB3FF1F1151C9E8E00EB3C8E /* ICBChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBChannelManager.h; sourceTree = "<group>"; };
+		AB3FF1F2151C9E8E00EB3C8E /* ICBChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBChannelManager.m; sourceTree = "<group>"; };
+		AB3FF52F151CA97400EB3C8E /* ICBXmppChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBXmppChannelManager.h; sourceTree = "<group>"; };
+		AB3FF530151CA97500EB3C8E /* ICBXmppChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBXmppChannelManager.m; sourceTree = "<group>"; };
 		AB8CC5ED150D651300DE9101 /* iChatBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8CC5F1150D651300DE9101 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AB8CC5F4150D651300DE9101 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -384,6 +390,10 @@
 			isa = PBXGroup;
 			children = (
 				ABB7CE961518B2F800E967B9 /* Categories */,
+				AB3FF1F1151C9E8E00EB3C8E /* ICBChannelManager.h */,
+				AB3FF52F151CA97400EB3C8E /* ICBXmppChannelManager.h */,
+				AB3FF530151CA97500EB3C8E /* ICBXmppChannelManager.m */,
+				AB3FF1F2151C9E8E00EB3C8E /* ICBChannelManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1151,6 +1161,8 @@
 				AB3FF1E9151C080800EB3C8E /* XMPPElement+Delay.m in Sources */,
 				AB3FF1EF151C086F00EB3C8E /* NSDate+XMPPDateTimeProfiles.m in Sources */,
 				AB3FF1F0151C086F00EB3C8E /* XMPPDateTimeProfiles.m in Sources */,
+				AB3FF1F3151C9E8F00EB3C8E /* ICBChannelManager.m in Sources */,
+				AB3FF531151CA97600EB3C8E /* ICBXmppChannelManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
